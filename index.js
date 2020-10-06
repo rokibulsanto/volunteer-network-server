@@ -31,6 +31,10 @@ admin.initializeApp({
 
 const port = 5000
 
+app.get('/', (req, res) => {
+  res.send('heroku is working');
+})
+
 
 
 const client = new MongoClient(uri, { useNewUrlParser: true,  useUnifiedTopology: true });
