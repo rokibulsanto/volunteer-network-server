@@ -19,11 +19,11 @@ app.use(cors());
 
 
 
-var serviceAccount = require("./configs/volunteer-network-client-site-firebase-adminsdk-h2cfy-f860cf0e1a.json");
+var serviceAccount = require("./volunteer-network-client-site-firebase-adminsdk-h2cfy-f860cf0e1a.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: process.env.DB_FIRE
+  databaseURL: "https://volunteer-network-client-site.firebaseio.com"
 });
 
 
